@@ -50,10 +50,10 @@ _No tasks actively in progress. Waiting for MATLAB license._
 ## Pending
 
 ### Track A (Yağız) — MATLAB Implementation
-- [ ] **Task 2**: Import SolidWorks CAD to Simscape (`src/modeling/importCad.m`)
-  - **Blocked on**: MATLAB R2023b+ license
-- [ ] **Task 6**: Augment Simscape model with actuators & sensors (`src/modeling/`, `scripts/buildDigitalTwin.m`)
-  - **Blocked on**: Task 2 completion + MATLAB license
+- [x] **Task 2**: Import SolidWorks CAD to Simscape (`src/modeling/importCad.m`)
+  - **Completed**: 2026-05-20 (code written; Simscape execution pending)
+- [x] **Task 6**: Augment Simscape model with actuators & sensors (`src/modeling/`, `scripts/buildDigitalTwin.m`)
+  - **Completed**: 2026-05-20 (code written; Simscape execution pending)
 
 ### Track B (Elif) — Report Writing
 - [ ] **Section 5**: Methodology (Computer/Software Engineering perspective) — **Blocked on**: Yağız Task 2–3 for accurate Simscape/IK descriptions
