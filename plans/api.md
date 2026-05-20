@@ -1,6 +1,6 @@
 ---
 version: 1.0.0
-last_updated: 2026-05-19
+last_updated: 2026-05-20
 domain: api
 scope: root
 ---
@@ -19,20 +19,19 @@ Define all external and internal interfaces: UDP sync bridge, Simscape model I/O
 - **Endianness**: Network byte order (swapbytes)
 
 ### Modes
-- `'tx'` — Transmit: sends actuator lengths to physical hardware
-- `'rx'` — Receive: reads actual pose from hardware (6×1 double vector)
+- `'init'` — Create persistent `udpport`. Args: `host`, `port`. Returns handle.
+- `'tx'` — Transmit 6×1 double vector. Args: `udpHandle`, `lengths`. Returns `[]`.
+- `'rx'` — Receive 6×1 double vector. Args: `udpHandle`. Returns `lengths`.
+- `'close'` — Close and delete handle. Args: `udpHandle`. Returns `[]`.
 
 ### Signature
 ```matlab
-function syncBridge(mode, host, port)
+function data = syncBridge(mode, varargin)
 ```
-- `mode`: `'tx'` | `'rx'`
-- `host`: IP address string (e.g., `'192.168.1.10'`)
-- `port`: integer port number
 
 ### Persistent Socket
-- Uses `persistent udpSocket` to avoid re-creation on each call.
-- Socket is `udpport('datagram', 'IPV4')`.
+- Handle is returned to caller on `'init'` and passed back for `'tx'`/`'rx'`/`'close'`.
+- Socket type: `udpport('datagram', 'IPAddr', host, 'RemotePort', port)`.
 
 ### Error Handling
 - Unknown `mode` throws `error('Unknown mode: %s', mode)`.

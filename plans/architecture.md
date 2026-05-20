@@ -1,6 +1,6 @@
 ---
 version: 1.0.0
-last_updated: 2026-05-19
+last_updated: 2026-05-20
 domain: architecture
 scope: root
 ---

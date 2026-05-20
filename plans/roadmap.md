@@ -1,6 +1,6 @@
 ---
 version: 1.0.0
-last_updated: 2026-05-19
+last_updated: 2026-05-20
 domain: roadmap
 scope: root
 ---
@@ -12,6 +12,13 @@ scope: root
 - [x] 2026-05-18: Mechanical Engineering sub-team sections in report completed
 - [x] 2026-05-19: Multi-plan design approved and spec written
 - [x] 2026-05-19: Domain-specific plans generated in `plans/`
+- [x] 2026-05-20: Task 1 — project setup (`scripts/setupProject.m`, `src/config/platformGeometry.m`)
+- [x] 2026-05-20: Task 3 — inverse kinematics library (`src/kinematics/`)
+- [x] 2026-05-20: Task 4 — forward kinematics for validation (`src/kinematics/forwardKinematics.m`)
+- [x] 2026-05-20: Task 5 — motion profile generator (`src/profiles/generateMotionProfile.m`)
+- [x] 2026-05-20: Task 7 — control layer & sync bridge (`src/control/motionController.m`, `src/communication/syncBridge.m`)
+- [x] 2026-05-20: Task 8 — logging & RMSE analysis (`src/analysis/`)
+- [x] 2026-05-20: Task 9 — full pipeline integration test & verification script
 
 ## Parallel Development Tracks
 
@@ -29,10 +36,7 @@ Tracks are designed to minimize blocking:
 ## In Progress
 
 ### Track A (Yağız)
-- [ ] **Task 1**: Project setup (`scripts/setupProject.m`, `src/config/platformGeometry.m`)
-  - Blocked on: MATLAB environment availability
-- [ ] **Task 2**: Import SolidWorks CAD to Simscape (`src/modeling/importCad.m`)
-  - Blocked on: MATLAB R2023b+ license
+_No tasks actively in progress. Waiting for MATLAB license._
 
 ### Track B (Elif)
 - [ ] **Section 1**: General Information (team, course, instructor) — **NO BLOCKER**
@@ -46,13 +50,10 @@ Tracks are designed to minimize blocking:
 ## Pending
 
 ### Track A (Yağız) — MATLAB Implementation
-- [ ] **Task 3**: Inverse Kinematics library (`src/kinematics/`)
-- [ ] **Task 4**: Forward Kinematics for validation (`src/kinematics/`)
-- [ ] **Task 5**: Motion Profile Generator (`src/profiles/`)
-- [ ] **Task 6**: Augment Simscape model with actuators & sensors (`src/modeling/`)
-- [ ] **Task 7**: Control layer & real-time sync bridge (`src/control/`, `src/communication/`)
-- [ ] **Task 8**: Logging & RMSE analysis (`src/analysis/`)
-- [ ] **Task 9**: Full pipeline integration test & verification script
+- [ ] **Task 2**: Import SolidWorks CAD to Simscape (`src/modeling/importCad.m`)
+  - **Blocked on**: MATLAB R2023b+ license
+- [ ] **Task 6**: Augment Simscape model with actuators & sensors (`src/modeling/`, `scripts/buildDigitalTwin.m`)
+  - **Blocked on**: Task 2 completion + MATLAB license
 
 ### Track B (Elif) — Report Writing
 - [ ] **Section 5**: Methodology (Computer/Software Engineering perspective) — **Blocked on**: Yağız Task 2–3 for accurate Simscape/IK descriptions
@@ -63,6 +64,6 @@ Tracks are designed to minimize blocking:
 - [ ] **Section 12**: Evaluation Form (learning outcomes matrix) — **NO BLOCKER**
 
 ## Last Session
-- Date: 2026-05-19
-- Left off: Multi-plan design approved; task delegation assigned (Yağız → MATLAB, Elif → Report)
-- Next: Yağız begins Task 1 (MATLAB setup); Elif begins Section 1 (General Information) and independent report sections
+- **Date**: 2026-05-20
+- **Left off**: All unblocked Track A tasks completed (Tasks 1, 3–5, 7–9).
+- **Next**: Obtain MATLAB R2023b+ license to unblock Tasks 2 and 6 (Simscape import / augmentation).
