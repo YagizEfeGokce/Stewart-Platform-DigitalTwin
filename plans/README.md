@@ -43,6 +43,13 @@ When implementing a task:
 
 4. **If no plan exists**, note the gap in `roadmap.md` and proceed with the spec (`docs/superpowers/specs/2026-05-19-stewart-platform-multi-plan-design.md`).
 
+## Task Delegation
+
+- **Yağız Efe Gökçe** (Software Engineering): owns all MATLAB implementation tasks (Track A).
+- **Elif Eylül Kavrazlı** (Computer Engineering): owns all report writing tasks (Track B).
+
+Tracks are designed for parallel development. See `roadmap.md` for blocker analysis.
+
 ## Updating Plans
 
 When the spec changes or a new requirement emerges:

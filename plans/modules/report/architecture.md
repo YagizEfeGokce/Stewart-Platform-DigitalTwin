@@ -97,6 +97,17 @@ Define the section hierarchy, dependencies, and flow for the ENS003 Project Repo
 - **Blank**: Computer / Software Engineering sub-team sections (Overview, Literature Survey, Constraints, Requirements, Methodology, System Integration).
 - **Needs Update**: Findings and Conclusion once Simscape integration is complete.
 
+## Task Delegation
+
+| Report Section | Owner | Blocker |
+|---|---|---|
+| Sections 1–4, 6–7 | Elif | None |
+| Section 5 | Elif | Yağız Tasks 2–3 |
+| Sections 8–9 | Elif | Yağız Task 9 |
+| Appendix 10a (Overview, Literature, Constraints, Requirements) | Elif | None |
+| Appendix 10b (Methodology, System Integration) | Elif | Yağız Tasks 3–7 |
+| Sections 11–12 | Elif | None |
+
 ## Cross-References to Technical Plans
 
 | Report Section | Technical Plan |

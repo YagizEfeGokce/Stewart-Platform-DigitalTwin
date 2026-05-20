@@ -6,6 +6,16 @@ scope: module
 module: report
 ---
 
+# Task Delegation
+
+| Task | Owner | Status | Blocker |
+|---|---|---|---|
+| Section 1–4, 6–7, 10a, 11–12 | Elif Eylül Kavrazlı | Pending | None (independent) |
+| Section 5, 8–9, 10b | Elif Eylül Kavrazlı | Pending | Yağız Tasks 2–9 |
+| MATLAB Tasks 1–9 | Yağız Efe Gökçe | Pending | MATLAB license |
+
+*Section numbering: 10a = Overview, Literature Survey, Constraints, Requirements; 10b = Methodology, System Integration*
+
 # Report Business Logic Plan: Content Rules Per Section
 
 ## Goal
